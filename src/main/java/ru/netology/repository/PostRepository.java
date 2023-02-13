@@ -38,7 +38,7 @@ public class PostRepository {
         else if (posts.containsKey(post.getId())){
             posts.put(post.getId(), post);
         } else {
-            throw new NotFoundException("ID Not Found");
+            throw new NotFoundException();
         }
         return post;
     }
